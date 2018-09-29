@@ -1,0 +1,346 @@
+﻿<Window x:Class="Module_02.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Module_02"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="540">
+    <TabControl>
+        <TabItem Header="a">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <!--left top-->
+                <Button Grid.Row="0"
+                        Grid.Column="0">Button 1</Button>
+
+                <!--right top-->
+                <Grid Grid.Row="0"
+                      Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Grid.Column="0">Button 2</Button>
+                    <Button Grid.Column="1">Button 3</Button>
+                </Grid>
+
+                <!--bottom left-->
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Button>Button 4</Button>
+                    <Button Grid.Row="1">Button 7</Button>
+                </Grid>
+
+                <!--bottom right-->
+                <Grid Grid.Row="1"
+                      Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Button>Button 5</Button>
+                    <Button Grid.Column="1">Button 6</Button>
+                    <Button Grid.Row="1">Button 8</Button>
+                    <Button Grid.Row="1"
+                            Grid.Column="1">Button 9</Button>
+                </Grid>
+
+            </Grid>
+        </TabItem>
+
+
+        <TabItem Header="b">
+            <DockPanel>
+                <Button DockPanel.Dock="Left"
+                        Padding="80,0,80,0">asdfasd</Button>
+                <Button DockPanel.Dock="Right"
+                        Padding="50,0,50,0">asdf</Button>
+                <Button>asdfasdfasdfasdfasdfasdfasdfasdf</Button>
+            </DockPanel>
+        </TabItem>
+
+
+        <TabItem Header="c">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="5*"></ColumnDefinition>
+                    <ColumnDefinition Width="4*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Button>Button</Button>
+                <Button Grid.Column="1">Button</Button>
+                <Button Grid.Column="2">Button</Button>
+            </Grid>
+        </TabItem>
+
+
+        <TabItem Header="d">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="6*"></ColumnDefinition>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Button>Button</Button>
+                <Button Grid.Column="1">Button</Button>
+                <Button Grid.Column="2">Button</Button>
+            </Grid>
+        </TabItem>
+
+
+        <TabItem Header="e">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Button>Button</Button>
+                <Button Grid.Column="1">Button</Button>
+                <Button Grid.Row="1" Grid.ColumnSpan="2">Button</Button>
+            </Grid>
+        </TabItem>
+
+
+        <TabItem Header="f">
+            <DockPanel>
+                <Button DockPanel.Dock="Top"
+                        Margin="50,0,0,0"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Left">Button</Button>
+                <Button DockPanel.Dock="Right"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Right">Button</Button>
+            </DockPanel>
+        </TabItem>
+
+
+        <TabItem Header="g">
+            <StackPanel>
+                <Button>Button</Button>
+                <Button>Button</Button>
+                <Button>Button</Button>
+                <Button>Button</Button>
+                <Button>Button</Button>
+                <Button>Button</Button>
+                <Button>Button</Button>
+                <Button>Button</Button>
+            </StackPanel>
+        </TabItem>
+
+
+        <TabItem Header="h">
+            <StackPanel Orientation="Horizontal">
+                <Button>Button</Button>
+                <Button>Button</Button>
+                <Button>Button</Button>
+                <Button>Button</Button>
+                <Button>Button</Button>
+                <Button>Button</Button>
+                <Button>Button</Button>
+                <Button>Button</Button>
+                <Button>Button</Button>
+                <Button>Button</Button>
+            </StackPanel>
+        </TabItem>
+
+
+        <TabItem Header="i">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <DockPanel>
+                    <Button DockPanel.Dock="Top"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Left">Button</Button>
+
+                    <Button DockPanel.Dock="Bottom"
+                        VerticalAlignment="Bottom"
+                        HorizontalAlignment="Right">Button</Button>
+
+                    <Button VerticalAlignment="Center"
+                        HorizontalAlignment="Center">Button</Button>
+
+                </DockPanel>
+
+                <DockPanel Grid.Column="1">
+                    <Button DockPanel.Dock="Bottom"
+                        VerticalAlignment="Bottom"
+                        HorizontalAlignment="Left">Button</Button>
+
+                    <Button DockPanel.Dock="Top"
+                            HorizontalAlignment="Right">Button</Button>
+
+                    <Button VerticalAlignment="Center"
+                            HorizontalAlignment="Center">Button</Button>
+                </DockPanel>
+            </Grid>
+
+        </TabItem>
+
+
+        <TabItem Header="j">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <DockPanel>
+                    <Button DockPanel.Dock="Top"
+                            HorizontalAlignment="Left">Button</Button>
+                    <Button DockPanel.Dock="Bottom"
+                            HorizontalAlignment="Right">Button</Button>
+                    <Button HorizontalAlignment="Center"
+                            VerticalAlignment="Center">Button</Button>
+                </DockPanel>
+
+                <DockPanel Grid.Row="1">
+                    <Button DockPanel.Dock="Bottom"
+                            HorizontalAlignment="Left">Button</Button>
+                    <Button DockPanel.Dock="Top"
+                            HorizontalAlignment="Right">Button</Button>
+                    <Button VerticalAlignment="Center"
+                            HorizontalAlignment="Center">Button</Button>
+                </DockPanel>
+            </Grid>
+        </TabItem>
+
+
+        <TabItem Header="k">
+            <DockPanel>
+                <Button DockPanel.Dock="Left">Button</Button>
+                <Button DockPanel.Dock="Top">Button</Button>
+                <Button DockPanel.Dock="Right">Button</Button>
+                <Button DockPanel.Dock="Bottom">Button</Button>
+                <Button>Button</Button>
+            </DockPanel>
+        </TabItem>
+
+
+        <TabItem Header="l">
+            <DockPanel>
+                <Button DockPanel.Dock="Top">Button</Button>
+                <Button DockPanel.Dock="Bottom">Button</Button>
+                <Button DockPanel.Dock="Left">Button</Button>
+                <Button DockPanel.Dock="Right">Button</Button>
+                <Button>Button</Button>
+            </DockPanel>
+        </TabItem>
+
+
+        <TabItem Header="m">
+            <DockPanel>
+                <Button DockPanel.Dock="Top">Button</Button>
+                <Button DockPanel.Dock="Bottom">Button</Button>
+                <Button DockPanel.Dock="Left">Button</Button>
+                <Button DockPanel.Dock="Left">Button</Button>
+                <Button DockPanel.Dock="Right">Button</Button>
+                <Button DockPanel.Dock="Right">Button</Button>
+                <Label></Label>
+            </DockPanel>
+        </TabItem>
+
+
+        <TabItem Header="n">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button>Button</Button>
+                    <Button>Button</Button>
+                    <Button>Button</Button>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Button Padding="0,10,0,10">Button</Button>
+                    <Button>Button</Button>
+                    <Button>Button</Button>
+                </StackPanel>
+            </StackPanel>
+        </TabItem>
+
+
+        <TabItem Header="o">
+            <WrapPanel>
+                <Button>Button1</Button>
+                <Button>Butto2n</Button>
+                <Button>Button3</Button>
+                <Button>Button4</Button>
+                <Button>Button5</Button>
+                <Button>Button6</Button>
+            </WrapPanel>
+        </TabItem>
+
+
+        <TabItem Header="p">
+            <WrapPanel >
+                <WrapPanel Orientation="Vertical">
+                    <Button>Button1</Button>
+                    <Button>Butto2n</Button>
+                    <Button>Button3</Button>
+                </WrapPanel>
+                
+                <WrapPanel Orientation="Vertical">
+                    <Button>Button4</Button>
+                    <Button>Button5</Button>
+                    <Button>Button6</Button>
+                </WrapPanel>
+            </WrapPanel>
+        </TabItem>
+
+
+        <TabItem Header="q">
+            <WrapPanel >
+                <WrapPanel Orientation="Vertical">
+                    <Button>Button1</Button>
+                    <Button>Butto2n</Button>
+                    <Button>Button3</Button>
+                </WrapPanel>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        
+                    <Button Grid.Row="0" 
+                            Grid.RowSpan="2">Button4</Button>
+                    <Button Grid.Row="2">Button5</Button>
+                    </Grid>
+                <WrapPanel>
+                    <Button>Button6</Button>
+                </WrapPanel>
+            </WrapPanel>
+        </TabItem>
+
+
+    </TabControl>
+</Window>

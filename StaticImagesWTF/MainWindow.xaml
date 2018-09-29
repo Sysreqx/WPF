@@ -1,0 +1,110 @@
+﻿<Window x:Class="StaticImagesWTF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StaticImagesWTF"
+        ResizeMode="NoResize"
+        mc:Ignorable="d"
+        Title="ImageHeYump" Height="475" Width="800">
+    <Grid Height="450" Width="800">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.RowSpan="2"
+               Grid.ColumnSpan="2"
+               Stretch="Fill"
+            Loaded="l"></Image>
+        <Image Grid.Column="2"
+               Grid.ColumnSpan="3"
+               Stretch="Fill"
+            Loaded="tc"></Image>
+        <Image Grid.Column="5"
+               Grid.ColumnSpan="2"
+               Stretch="Fill"
+            Loaded="tr"></Image>
+        <Image Grid.Row="1"
+               Grid.Column="2"
+               Grid.ColumnSpan="2"
+               Stretch="Fill"
+            Loaded="bc"></Image>
+        <Image Grid.Row="1"
+               Grid.Column="4"
+               Grid.ColumnSpan="3"
+               Stretch="Fill"
+            Loaded="br"></Image>
+
+        <TextBlock 
+FontSize="25"
+                   Foreground="Red">ROSES</TextBlock>
+        <TextBlock Foreground="Yellow" 
+        Grid.Column="1"
+                   FontSize="25">ARE</TextBlock>
+        <TextBlock
+        Grid.Column="2"
+        FontSize="25"
+                   Foreground="Red">RED,</TextBlock>
+        <TextBlock  
+        Grid.Column="3"
+        FontSize="25"
+                   Foreground="Blue">VIOLETS</TextBlock>
+        <TextBlock Foreground="Yellow" 
+        Grid.Column="4"
+        FontSize="25">ARE</TextBlock>
+        <TextBlock 
+        Grid.Column="5"
+        FontSize="25"
+                   Foreground="Blue">BLUE.</TextBlock>
+        <TextBlock Foreground="Yellow" 
+        Grid.Column="6"
+        FontSize="25">I'M</TextBlock>
+        <TextBlock Foreground="Yellow" 
+        Grid.Row="1"
+        FontSize="25">USING</TextBlock>
+        <TextBlock Foreground="Yellow" 
+        Grid.Row="1"
+                   Grid.Column="1"
+                   FontSize="25">MY</TextBlock>
+        <TextBlock Foreground="Yellow" 
+        Grid.Row="1"
+                   Grid.Column="2"
+                   FontSize="25">HAND,</TextBlock>
+        <TextBlock Foreground="Yellow" 
+        Grid.Row="1"
+                   Grid.Column="3"
+                   FontSize="25">BUT</TextBlock>
+        <TextBlock Foreground="Yellow" 
+        Grid.Row="1"
+                   Grid.Column="4"
+                   FontSize="25">I'M</TextBlock>
+        <TextBlock Foreground="Yellow" 
+        Grid.Row="1"
+                   Grid.Column="5"
+                   FontSize="25">THINKING</TextBlock>
+        <TextBlock Foreground="Yellow" 
+        Grid.Row="1"
+                   Grid.Column="6"
+                   FontSize="25">&#160;&#160;&#160;&#160;OF</TextBlock>
+
+        <TextBlock Foreground="Yellow" 
+        Grid.Row="1"
+                   Grid.ColumnSpan="7"
+                   FontSize="48"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center">
+            YOU
+        </TextBlock>
+
+    </Grid>
+</Window>
